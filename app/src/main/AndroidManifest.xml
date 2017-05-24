@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ibrahim.carpooling" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".ChattApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBsv1H8H9T_J0TOJ3IoPcvS1hQcxqZNUto" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".SignUp"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".profile"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Changepass"
+            android:theme="@style/AppTheme.CustomTheme" >
+        </activity>
+        <activity
+            android:name=".CreateTrip"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".triplist"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".updateprofile"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".tripdetails"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".othersprofile"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".UserList"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".Chat"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".searchtrip"
+            android:label="@string/title_activity_searchtrip" >
+        </activity>
+        <activity
+            android:name=".triplistsearch"
+            android:label="@string/title_activity_searchtrip" >
+        </activity>
+        <activity
+            android:name=".contactus"
+            android:label="@string/title_activity_contactus" >
+        </activity>
+    </application>
+
+</manifest>
